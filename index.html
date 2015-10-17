@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Gh-pages-tutorial by bmuellerhstat</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Gh-pages-tutorial</h1>
+          <h2></h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/bmuellerhstat/gh-pages-tutorial/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/bmuellerhstat/gh-pages-tutorial/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/bmuellerhstat/gh-pages-tutorial" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h1>
+<a id="github-pages-tutorial" class="anchor" href="#github-pages-tutorial" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub Pages Tutorial</h1>
+
+<h2>
+<a id="set-up-your-repo" class="anchor" href="#set-up-your-repo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Set up your repo:</h2>
+
+<ul>
+<li><code>git init</code></li>
+<li><code>touch index.html</code></li>
+<li><code>git add index.html</code></li>
+<li><code>git commit -m "create index"</code></li>
+<li><code>git remote add origin URL</code></li>
+<li><code>git push -u origin master</code></li>
+</ul>
+
+<h2>
+<a id="make-your-gh-pages-branch" class="anchor" href="#make-your-gh-pages-branch" aria-hidden="true"><span class="octicon octicon-link"></span></a>Make your gh-pages branch</h2>
+
+<ul>
+<li>use <code>git branch</code> to see your branches
+
+<ul>
+<li>you should only see <code>master</code>
+</li>
+</ul>
+</li>
+<li>use <code>git branch gh-pages</code> to make a new branch</li>
+<li>now <code>git branch</code> should show:</li>
+</ul>
+
+<pre><code>  gh-pages
+* master
+</code></pre>
+
+<h2>
+<a id="make-your-gh-pages-and-master-branches-mirrored" class="anchor" href="#make-your-gh-pages-and-master-branches-mirrored" aria-hidden="true"><span class="octicon octicon-link"></span></a>Make your <em>gh-pages</em> and <em>master</em> branches mirrored</h2>
+
+<ul>
+<li>open the hidden file <code>.git/config</code>
+
+<ul>
+<li>in cloud9, use <code>c9 .git/config</code>
+</li>
+</ul>
+</li>
+<li>add these two lines in the [remote “origin”] section:</li>
+</ul>
+
+<pre><code>    push = +refs/heads/master:refs/heads/gh-pages
+    push = +refs/heads/master:refs/heads/master
+</code></pre>
+
+<ul>
+<li>it should now look like:</li>
+</ul>
+
+<pre><code>[remote "origin"]
+    fetch = +refs/heads/*:refs/remotes/origin/*
+    url = git@github.com:user/repo.git
+    push = +refs/heads/master:refs/heads/gh-pages
+    push = +refs/heads/master:refs/heads/master
+</code></pre>
+
+<ul>
+<li>save</li>
+</ul>
+
+<h2>
+<a id="update-your-content-and-push" class="anchor" href="#update-your-content-and-push" aria-hidden="true"><span class="octicon octicon-link"></span></a>Update your content and push</h2>
+
+<ul>
+<li>add content to <code>index.html</code>
+</li>
+<li><code>git add index.html</code></li>
+<li><code>git commit -m "&lt;whatever content you add&gt;"</code></li>
+<li><code>git push</code></li>
+<li>at the bottom of the message, you should see something like:</li>
+</ul>
+
+<pre><code>To git@github.com:&lt;your-username&gt;/&lt;your-repo-name&gt;.git
+   68542ca..99a3a46  master -&gt; gh-pages
+   68542ca..99a3a46  master -&gt; master
+</code></pre>
+
+<h2>
+<a id="preview-your-page" class="anchor" href="#preview-your-page" aria-hidden="true"><span class="octicon octicon-link"></span></a>Preview your page</h2>
+
+<ul>
+<li><code>&lt;your-username&gt;.github.io/&lt;your-repo-name&gt;</code></li>
+</ul>
+
+<hr>
+
+<h3>
+<a id="need-to-delete-the-gh-pages-branch" class="anchor" href="#need-to-delete-the-gh-pages-branch" aria-hidden="true"><span class="octicon octicon-link"></span></a>Need to delete the <code>gh-pages</code> branch?</h3>
+
+<ul>
+<li>Deleting the local branch:
+
+<ul>
+<li><code>git branch -D gh-pages</code></li>
+</ul>
+</li>
+<li>Deleting the remote branch:
+
+<ul>
+<li><code>git push origin --delete gh-pages</code></li>
+</ul>
+</li>
+</ul>
+        </section>
+
+        <footer>
+          Gh-pages-tutorial is maintained by <a href="https://github.com/bmuellerhstat">bmuellerhstat</a><br>
+          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
