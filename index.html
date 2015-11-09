@@ -1,43 +1,45 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <title>GitHub Pages Tutorial by bmuellerhstat</title>
+    <meta name="description" content="GitHub Pages Tutorial : Mirroring your gh-pages and master branches">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>GitHub Pages Tutorial</title>
   </head>
 
   <body>
-    <div id="container">
-      <div class="inner">
 
-        <header>
-          <h1>GitHub Pages Tutorial</h1>
-          <h2>Mirroring your gh-pages and master branches</h2>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/bmuellerhstat/gh-pages-tutorial">View on GitHub</a>
+
+          <h1 id="project_title">GitHub Pages Tutorial</h1>
+          <h2 id="project_tagline">Mirroring your gh-pages and master branches</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/bmuellerhstat/gh-pages-tutorial/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/bmuellerhstat/gh-pages-tutorial/tarball/master">Download this project as a tar.gz file</a>
+            </section>
         </header>
+    </div>
 
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/bmuellerhstat/gh-pages-tutorial/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/bmuellerhstat/gh-pages-tutorial/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/bmuellerhstat/gh-pages-tutorial" id="view-on-github" class="button"><span>View on GitHub</span></a>
-        </section>
-
-        <hr>
-
-        <section id="main_content">
-          <h1>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
 <a id="github-pages-tutorial" class="anchor" href="#github-pages-tutorial" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub Pages Tutorial</h1>
 
 <h2>
-<a id="set-up-your-repo" class="anchor" href="#set-up-your-repo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Set up your repo:</h2>
+<a id="setting-up-your-repo-for-the-first-time" class="anchor" href="#setting-up-your-repo-for-the-first-time" aria-hidden="true"><span class="octicon octicon-link"></span></a>Setting up your repo for the first time</h2>
 
 <ul>
+<li><code>mkdir repo-name</code></li>
+<li><code>cd repo-name</code></li>
 <li><code>git init</code></li>
 <li><code>touch index.html</code></li>
 <li><code>git add index.html</code></li>
@@ -47,7 +49,7 @@
 </ul>
 
 <h2>
-<a id="make-your-gh-pages-branch" class="anchor" href="#make-your-gh-pages-branch" aria-hidden="true"><span class="octicon octicon-link"></span></a>Make your gh-pages branch</h2>
+<a id="making-your-gh-pages-branch" class="anchor" href="#making-your-gh-pages-branch" aria-hidden="true"><span class="octicon octicon-link"></span></a>Making your gh-pages branch</h2>
 
 <ul>
 <li>use <code>git branch</code> to see your branches
@@ -66,7 +68,7 @@
 </code></pre>
 
 <h2>
-<a id="make-your-gh-pages-and-master-branches-mirrored" class="anchor" href="#make-your-gh-pages-and-master-branches-mirrored" aria-hidden="true"><span class="octicon octicon-link"></span></a>Make your <em>gh-pages</em> and <em>master</em> branches mirrored</h2>
+<a id="making-your-gh-pages-and-master-branches-mirrored" class="anchor" href="#making-your-gh-pages-and-master-branches-mirrored" aria-hidden="true"><span class="octicon octicon-link"></span></a>Making your <em>gh-pages</em> and <em>master</em> branches mirrored</h2>
 
 <ul>
 <li>open the hidden file <code>.git/config</code>
@@ -99,7 +101,7 @@
 </ul>
 
 <h2>
-<a id="update-your-content-and-push" class="anchor" href="#update-your-content-and-push" aria-hidden="true"><span class="octicon octicon-link"></span></a>Update your content and push</h2>
+<a id="updating-your-content-and-pushing" class="anchor" href="#updating-your-content-and-pushing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Updating your content and pushing</h2>
 
 <ul>
 <li>add content to <code>index.html</code>
@@ -116,7 +118,7 @@
 </code></pre>
 
 <h2>
-<a id="preview-your-page" class="anchor" href="#preview-your-page" aria-hidden="true"><span class="octicon octicon-link"></span></a>Preview your page</h2>
+<a id="previewing-your-page" class="anchor" href="#previewing-your-page" aria-hidden="true"><span class="octicon octicon-link"></span></a>Previewing your page</h2>
 
 <ul>
 <li><code>&lt;your-username&gt;.github.io/&lt;your-repo-name&gt;</code></li>
@@ -141,15 +143,18 @@
 </ul>
 </li>
 </ul>
-        </section>
-
-        <footer>
-          GitHub Pages Tutorial is maintained by <a href="https://github.com/bmuellerhstat">bmuellerhstat</a><br>
-          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
-        </footer>
-
-        
-      </div>
+      </section>
     </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">GitHub Pages Tutorial maintained by <a href="https://github.com/bmuellerhstat">bmuellerhstat</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
   </body>
 </html>
