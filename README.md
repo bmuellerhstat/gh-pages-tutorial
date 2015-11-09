@@ -1,6 +1,8 @@
 # GitHub Pages Tutorial
 
-## Set up your repo:
+## Setting up your repo for the first time
+* `mkdir repo-name`
+* `cd repo-name`
 * `git init`
 * `touch index.html`
 * `git add index.html`
@@ -8,7 +10,7 @@
 * `git remote add origin URL`
 * `git push -u origin master`
 
-## Make your gh-pages branch
+## Making your gh-pages branch
 * use `git branch` to see your branches
   * you should only see `master`
 * use `git branch gh-pages` to make a new branch
@@ -19,7 +21,7 @@
 * master
 ```
 
-## Make your _gh-pages_ and _master_ branches mirrored
+## Making your _gh-pages_ and _master_ branches mirrored
 * open the hidden file `.git/config`
   * in cloud9, use `c9 .git/config`
 * add these two lines in the [remote “origin”] section:
@@ -37,7 +39,7 @@
 ```
 * save
 
-## Update your content and push
+## Updating your content and pushing
 * add content to `index.html`
 * `git add index.html`
 * `git commit -m "<whatever content you add>"`
@@ -49,7 +51,7 @@ To git@github.com:<your-username>/<your-repo-name>.git
    68542ca..99a3a46  master -> master
 ```
 
-## Preview your page
+## Previewing your page
 * `<your-username>.github.io/<your-repo-name>`
 
 ---
