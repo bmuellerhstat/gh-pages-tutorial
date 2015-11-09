@@ -28,7 +28,7 @@
 ## Making your _gh-pages_ and _master_ branches mirrored
 * open the hidden file `.git/config`
   * in cloud9, use `c9 .git/config`
-* add these two lines in the [remote “origin”] section:
+* add these two lines in the `[remote “origin”]` section:
 ```
 	push = +refs/heads/master:refs/heads/gh-pages
 	push = +refs/heads/master:refs/heads/master
