@@ -6,7 +6,11 @@
 * `git init`
 * `touch index.html`
 * `git add index.html`
-* `git commit -m "create index"`
+* `git commit -m "create index"`  
+
+
+**Create a remote repository on GitHub with the same name**  
+
 * `git remote add origin URL`
 * `git push -u origin master`
 
