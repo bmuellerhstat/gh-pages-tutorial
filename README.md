@@ -51,8 +51,8 @@
 * at the bottom of the message, you should see something like:
 ```
 To git@github.com:<your-username>/<your-repo-name>.git
-   68542ca..99a3a46  master -> gh-pages
-   68542ca..99a3a46  master -> master
+   b33fe26..4854de6  master -> master
+ * [new branch]      master -> gh-pages
 ```
 
 ## Previewing your page
