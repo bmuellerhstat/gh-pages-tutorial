@@ -56,7 +56,8 @@ To git@github.com:<your-username>/<your-repo-name>.git
 ```
 
 ## Previewing your page
-* `<your-username>.github.io/<your-repo-name>`
+* In a new tab, you should see your page running at the following URL:  
+`<your-username>.github.io/<your-repo-name>`
 
 ---
 
