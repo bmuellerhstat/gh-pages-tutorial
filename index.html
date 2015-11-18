@@ -135,6 +135,30 @@
 
 <hr>
 
+<h2>
+<a id="work-smarter-not-harder" class="anchor" href="#work-smarter-not-harder" aria-hidden="true"><span class="octicon octicon-link"></span></a>Work smarter, not harder</h2>
+
+<p>It would be a good idea to save a short reminder of the crucial steps into a text file (such as gh-pages.txt) in the root directory of your workspace.  That way, you don't have to re-visit this tutorial every time you want to mirror with gh-pages.</p>
+
+<p>In cloud9, it looks like this:  </p>
+
+<ul>
+<li><code>touch ~/workspace/gh-pages.txt</code></li>
+<li><code>c9 ~/workspace/gh-pages.txt</code></li>
+<li>Copy/paste the code snippet below</li>
+</ul>
+
+<pre><code>***COMMAND LINE***
+git branch gh-pages
+c9 .git/config
+
+***PASTE INTO REMOTE ORIGIN***
+push = +refs/heads/master:refs/heads/gh-pages
+push = +refs/heads/master:refs/heads/master
+</code></pre>
+
+<hr>
+
 <h3>
 <a id="need-to-delete-the-gh-pages-branch" class="anchor" href="#need-to-delete-the-gh-pages-branch" aria-hidden="true"><span class="octicon octicon-link"></span></a>Need to delete the <code>gh-pages</code> branch?</h3>
 
