@@ -61,8 +61,30 @@ To git@github.com:<your-username>/<your-repo-name>.git
 
 ---
 
+## Work smarter, not harder
+It would be a good idea to save a short reminder of the crucial steps into a text file (such as gh-pages.txt) in the root directory of your workspace.  That way, you don't have to re-visit this tutorial every time you want to mirror with gh-pages.
+
+In cloud9, it looks like this:  
+
+* `touch ~/workspace/gh-pages.txt`
+* `c9 ~/workspace/gh-pages.txt`
+* Copy/paste the code snippet below
+
+```
+***COMMAND LINE***
+git branch gh-pages
+c9 .git/config
+
+***PASTE INTO REMOTE ORIGIN***
+push = +refs/heads/master:refs/heads/gh-pages
+push = +refs/heads/master:refs/heads/master
+```
+
+---
+
 ### Need to delete the `gh-pages` branch?
 * Deleting the local branch:
   * `git branch -D gh-pages`
 * Deleting the remote branch:
   * `git push origin --delete gh-pages`
+  
