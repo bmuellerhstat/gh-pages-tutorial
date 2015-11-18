@@ -78,6 +78,8 @@ c9 .git/config
 ***PASTE INTO REMOTE ORIGIN***
 push = +refs/heads/master:refs/heads/gh-pages
 push = +refs/heads/master:refs/heads/master
+
+***SAVE AND CLOSE***
 ```
 
 ---
